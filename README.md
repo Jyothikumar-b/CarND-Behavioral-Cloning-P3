@@ -63,7 +63,7 @@ I have used Udacity training data. There were **Three** images(Center,Left,Right
 
 ***Data Distribution Of Given Input Data***
 
-![alt_text](./Images/RawInput_Distribution.jpg)
+![alt_text](./Images/RawInput_Distribution.JPG)
 
 From the above graph, it is observed that we didn't have same amount of data in each output classes. we can achieve equal distribution by two ways.
 1. We can improve the samples for output classes which are lower
@@ -74,7 +74,7 @@ I chose the second way. As most of the data has roughly 300 images in an average
 
 ***Data Distribution Of Selected Data***
 
-![alt_text](./Images/SelectedInput_DD.jpg)
+![alt_text](./Images/SelectedInput_DD.JPG)
 
 The above data is comparatively well distributed. Agin, this is not evenly distributed in all output classes. As we don't take large turn everytime. Mostly we drive straightly with slight turn. So, these selected data will work without any issue.
 
@@ -125,7 +125,8 @@ My final model consists of **Four** hidden layers.( 3 Convolution layer followed
 
 As discussed in the previous section, apart from 24108 training images 10818 images selected. Among them 20 percent of the images are used for validation.
 The input data is distributed among all output classes to avoid biased output. The whole data set is shuffled to get random classes in each batch.
-![alt](./Images/Y_Distribution.jpg)
+
+![alt](./Images/Y_Distribution.JPG)
 
 **Data Augumentation :**
 
@@ -134,7 +135,7 @@ The upper portion of the image not required for detecting the lanes. so, we are 
 >> ![alt](./Images/center_2016_12_01_13_30_48_287.jpg)
 
 > Output Image :
->> ![alt](./Images/Cropped.jpg)
+>> ![alt](./Images/Cropped.JPG)
 
 The cropped image is normalized using the below formulae:
 ```python
